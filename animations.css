@@ -1,0 +1,140 @@
+@-webkit-keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#slovakia,
+#stork {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 0.3px;
+  fill: rgb(0, 0, 0);
+  stroke-dasharray: 800;
+  animation: animate 7s ease-out;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 800;
+  }
+
+  30% {
+    opacity: 5;
+    fill: none;
+    stroke-dashoffset: 800;
+  }
+  50% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 800;
+  }
+
+  80% {
+    fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    opacity: 10;
+    fill: rgb(0, 0, 0);
+
+    stroke-dashoffset: 0;
+  }
+}
+
+#figures .st3123 {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 0.3px;
+  fill: rgb(0, 0, 0);
+  stroke-dasharray: 1200;
+  animation: animate1 7s ease-out;
+  animation-delay: -3s;
+}
+
+@keyframes animate1 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1200;
+  }
+
+  30% {
+    opacity: 5;
+    fill: none;
+    stroke-dashoffset: 1200;
+  }
+  50% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1200;
+  }
+
+  80% {
+    fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    opacity: 10;
+    fill: rgb(0, 0, 0);
+
+    stroke-dashoffset: 0;
+  }
+}
+
+#models {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 0.3px;
+  fill: rgb(0, 0, 0);
+  stroke-dasharray: 4200;
+  animation: fadein 3s linear;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#amster .st3124,
+#amster .st3125,
+#amster .st3126,
+#amster .st3123,
+#amster .st3123 {
+  transition: 1s;
+  animation: down 5s infinite;
+}
+
+#clapperboard path {
+  animation: fadein 3s ease-out;
+}
+
+#auckland:hover {
+  transform: rotateX(180deg);
+}

@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
 }
@@ -11,7 +16,23 @@ a:visited {
   text-decoration: none;
 }
 
-.introvid {
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~` END OF THE GENERAL ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~DESKTOP LANDING PAGE~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* .introvid {
   width: 100%;
   position: relative;
 }
@@ -21,6 +42,7 @@ a:visited {
   object-fit: cover;
   opacity: 0.9;
 }
+*/
 
 .nav {
   display: grid;
@@ -59,6 +81,18 @@ a:visited {
   padding: 2em 5em 5em 5em;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-gap: 2em;
+  background-color: rgba(184, 127, 166, 0.5);
+  padding: 2em;
+}
+
+.footer div {
+  align-self: end;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~DESKTOP CONTACT ME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .content {
@@ -68,7 +102,7 @@ a:visited {
 
 .forms {
   background-color: rgba(184, 127, 166, 0.5);
-  margin: 3em 9em 2em 6em;
+  margin: 3em 9em 2em 9em;
   padding: 2em 3em 0em 3em;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -112,13 +146,49 @@ input {
   cursor: pointer;
 }
 
+#send:hover {
+  transition: 0.5s;
+  text-shadow: 1px 1px 1px white;
+}
+
 .pic {
   text-align: center;
   margin-top: 1em;
+  margin-right: 3em;
 }
 
 .pic img {
-  width: 26vw;
+  width: 25vw;
+}
+
+.pic i {
+  color: #b87fa6;
+}
+.media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.pic p {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+.media a {
+  color: #b87fa6;
+  font-family: "Angelica", sans-serif;
+}
+
+#ig,
+#cv {
+  width: 3em;
+}
+
+#ig:hover,
+#cv:hover {
+  transition: 0.5s;
+  width: 3.5em;
 }
 
 @-webkit-keyframes down {
